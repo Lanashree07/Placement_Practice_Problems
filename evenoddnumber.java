@@ -15,12 +15,16 @@ public class evenoddnumber {
     }
 
     public static void main(String[] args) {
-        int n1 = 15;
-        System.out.println("Input: n = " + n1);
-        System.out.println("Output: " + isEven(n1)); // Output: false
-
-        int n2 = 44;
-        System.out.println("Input: n = " + n2);
-        System.out.println("Output: " + isEven(n2)); // Output: true
+        int n1 = 15 , n2 = 44;
+        if (isEven(n1)) {
+            System.out.println(n1 + " is even: true");
+        } else {
+            System.out.println(n1 + " is even: false");
+        }
+        if (isEven(n2)) {
+            System.out.println(n2 + " is even: true");
+        } else {
+            System.out.println(n2 + " is even: false");
+        }
     }
 }

@@ -10,18 +10,16 @@
 # Output: 6
 # Explanation: 6^2 = 36. Last digit is 6.
 
-def firstDigit(n):
-    while n >= 10:
-        n = n // 10
+def lastDigit(a: str, b: str) -> int:
+    if b == "0":
+        return 1
 
-    return n
+    a = int(a[-1])
+    b = int(b)
+
+    return pow(a, b, 10)
 
 
-def lastDigit(n):
-    return n % 10
-
-
-n = 98562
-
-print(firstDigit(n), end=" ")
-print(lastDigit(n))
+# Given examples
+print(lastDigit("3", "10"))
+print(lastDigit("6", "2"))
